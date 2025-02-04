@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.grey{
+color:grey;
+}
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    list-style: none;
+}
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li ul li {
+    margin: 5px 0;
+}
+.logo {
+    text-align: center;
+    margin: 20px 0;
+}
+.banner {
+    width: 100%;
+    height: 300px;
+    background: url('https://live.staticflickr.com/3771/11938517036_c4c596ca28_3k.jpg') center/cover no-repeat;
+    position: relative;
+}
+.banner h1 {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 32px;
+}
+.banner p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.container {
+    padding: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+input, select, textarea {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+label {
+    font-weight: bold;
+}
+.gender, .hobbies {
+    display: flex;
+    gap: 10px;
+}
+button {
+    padding: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+}
+button:hover {
+    background-color: #555;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 32px 16px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+footer div {
+    margin: 10px;
+}
+footer h3 {
+    margin-bottom: 16px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    color:white;
+    margin: 5px 0;
+}
+footer ul li a {
+    color: #bbb;
+    text-decoration: none;
+}
+footer ul li a:hover {
+    text-decoration: underline;
+}
+.footer-bottom {
+    background-color: black;
+    color: #bbb;
+    display:flex;
+    justify-content:space-around;
+    padding: 16px;
+    font-size: 14px;
+}
+.footer-bottom a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.golden{
+color:rgb(214, 186, 23);
+}
+hr{
+margin:0px;
+border:1px black;
+padding:0.4px;
+}

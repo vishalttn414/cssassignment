@@ -1,0 +1,26 @@
+Question4-How are inline and block elements different from each other?
+
+Answer4-
+Characteristics of a Block Element:
+
+div {
+    display: block;
+}
+
+Start on a new line
+Take up full width available
+Respect width and height properties
+Can contain both block and inline elements
+Add margins above and below automatically
+Example elements: <div>, <p>, <h1>, <section>, <article>
+
+Characteristics of inline Element:
+
+span{display:inline;}
+
+Flow within text content
+Only take up as much width as needed
+Height and width properties don't apply
+Cannot contain block elements
+Only respect horizontal margins/padding (not vertical)
+Example elements: <span>, <a>, <strong>, <em>, <img>

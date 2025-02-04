@@ -1,0 +1,31 @@
+Question2-Explain the difference between absolute and relative positions.
+
+Answer2-Relative Positioning
+
+Elements remain in the normal document flow
+The element is positioned relative to its original position
+Moving it (using top, right, bottom, left) doesn't affect other elements
+Creates a positioning context for absolutely positioned child elements.
+
+.relative-element {
+  position: relative;
+  top: 20px;  /* Moves 20px down from original position */
+  left: 10px; /* Moves 10px right from original position */
+}
+
+Absolute Positioning
+
+Removes the element from the normal document flow
+Positions relative to its nearest non-static positioned ancestor.
+If no positioned ancestor exists, it positions relative to the viewport
+Other elements act as if the absolute element doesn't exist.
+
+.parent-element{
+  position: relative; 
+}
+
+.absolute-element {
+  position: absolute;
+  top: 0;  
+  right: 0;
+}
