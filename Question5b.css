@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.site-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.site-header img {
+    max-width: 150px;
+}
+
+.navigation {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px 0;
+}
+
+.nav-list li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav-list a:hover {
+    color: #FFB347;
+}
+
+.accent {
+    color: #FFB347 !important;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: none;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.nav-list li:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 10px 15px;
+}
+
+.header-banner {
+    background-image: url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.header-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.header-banner h1, .header-banner p {
+    position: relative;
+    z-index: 1;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-element {
+    margin-bottom: 15px;
+}
+
+.form-element label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.option-group {
+    display: flex;
+    gap: 20px;
+}
+
+.action-button {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.action-button:hover {
+    background: #444;
+}
+
+.side-content {
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.page-footer {
+    background: #222;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.footer-block h3 {
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.footer-block ul {
+    list-style: none;
+}
+
+.footer-block li {
+    margin-bottom: 10px;
+}
+
+.footer-block a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-block a:hover {
+    color: #FFB347;
+}
+
+.footer-info {
+    border-top: 1px solid #333;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .navigation {
+        padding: 10px 0;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .navigation:hover .nav-list {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 0;
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .nav-list li:hover .dropdown-menu {
+        display: block;
+    }
+
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
+
+@media (max-width: 480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .option-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
