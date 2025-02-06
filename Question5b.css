@@ -209,6 +209,30 @@
     text-align: center;
     font-size: 14px;
 }
+
+.fi{
+  border:1px solid black;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  gap:5px;
+  margin-bottom:10px;
+}
+
+.si{
+  border:1px solid black;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  gap:5px;
+  margin-bottom:10px;
+  padding:10px 78px 10px 78px;
+}
+.social{
+  display:flex;
+}
 @media (max-width: 768px) {
     .nav-toggle {
         display: block;
@@ -269,5 +293,10 @@
     .option-group {
         flex-direction: column;
         gap: 10px;
+    }
+    .side-content{
+      position: relative;
+      left:0px;
+      margin-left:0px;
     }
 }
